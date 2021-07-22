@@ -1,7 +1,6 @@
 package me.dancedog.rewardclaim.types;
 
-import lombok.Getter;
-import me.dancedog.rewardclaim.Mod;
+import me.dancedog.rewardclaim.RewardClaim;
 import net.minecraft.util.ResourceLocation;
 
 /**
@@ -11,53 +10,59 @@ import net.minecraft.util.ResourceLocation;
  */
 @SuppressWarnings("unused")
 public enum HousingSkull {
-  // Fallback
-  UNKNOWN(HousingSkullGroup.RED),
+    // Fallback
+    UNKNOWN(HousingSkullGroup.RED),
 
-  // Red
-  RED_TREASURE_CHEST(HousingSkullGroup.RED),
-  GOLD_NUGGET(HousingSkullGroup.RED),
-  POT_O_GOLD(HousingSkullGroup.RED),
-  RUBIKS_CUBE(HousingSkullGroup.RED),
-  PIGGY_BANK(HousingSkullGroup.RED),
-  HEALTH_POTION(HousingSkullGroup.RED),
+    // Red
+    RED_TREASURE_CHEST(HousingSkullGroup.RED),
+    GOLD_NUGGET(HousingSkullGroup.RED),
+    POT_O_GOLD(HousingSkullGroup.RED),
+    RUBIKS_CUBE(HousingSkullGroup.RED),
+    PIGGY_BANK(HousingSkullGroup.RED),
+    HEALTH_POTION(HousingSkullGroup.RED),
 
-  // Green
-  GREEN_TREASURE_CHEST(HousingSkullGroup.GREEN),
-  COIN_BAG(HousingSkullGroup.GREEN),
-  ORNAMENTAL_HELMET(HousingSkullGroup.GREEN),
-  POCKET_GALAXY(HousingSkullGroup.GREEN),
-  MYSTIC_PEARL(HousingSkullGroup.GREEN),
-  AGILITY_POTION(HousingSkullGroup.GREEN),
+    // Green
+    GREEN_TREASURE_CHEST(HousingSkullGroup.GREEN),
+    COIN_BAG(HousingSkullGroup.GREEN),
+    ORNAMENTAL_HELMET(HousingSkullGroup.GREEN),
+    POCKET_GALAXY(HousingSkullGroup.GREEN),
+    MYSTIC_PEARL(HousingSkullGroup.GREEN),
+    AGILITY_POTION(HousingSkullGroup.GREEN),
 
-  // Blue
-  BLUE_TREASURE_CHEST(HousingSkullGroup.BLUE),
-  GOLDEN_CHALICE(HousingSkullGroup.BLUE),
-  JEWELERY_BOX(HousingSkullGroup.BLUE),
-  CROWN(HousingSkullGroup.BLUE),
-  MOLTEN_CORE(HousingSkullGroup.BLUE),
-  MANA_POTION(HousingSkullGroup.BLUE);
+    // Blue
+    BLUE_TREASURE_CHEST(HousingSkullGroup.BLUE),
+    GOLDEN_CHALICE(HousingSkullGroup.BLUE),
+    JEWELERY_BOX(HousingSkullGroup.BLUE),
+    CROWN(HousingSkullGroup.BLUE),
+    MOLTEN_CORE(HousingSkullGroup.BLUE),
+    MANA_POTION(HousingSkullGroup.BLUE);
 
-  @Getter
-  private final HousingSkullGroup group;
-  @Getter
-  private final ResourceLocation resource;
+    private final HousingSkullGroup group;
+    private final ResourceLocation resource;
 
-  HousingSkull(HousingSkullGroup group) {
-    this.group = group;
-    this.resource = Mod.getGuiTexture("reward_sub/housing_skull/" + name().toUpperCase() + ".png");
-  }
-
-  public static HousingSkull fromName(String name) {
-    if (name == null || name.isEmpty()) {
-      return UNKNOWN;
+    HousingSkull(HousingSkullGroup group) {
+        this.group = group;
+        this.resource = RewardClaim.getGuiTexture("reward_sub/housing_skull/" + name().toUpperCase() + ".png");
     }
 
-    try {
-      return valueOf(name.toUpperCase());
-    } catch (IllegalArgumentException e) {
-      e.printStackTrace();
-      return UNKNOWN;
+    public static HousingSkull fromName(String name) {
+        if (name == null || name.isEmpty()) {
+            return UNKNOWN;
+        }
+
+        try {
+            return valueOf(name.toUpperCase());
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+            return UNKNOWN;
+        }
     }
-  }
+
+    public HousingSkullGroup getGroup() {
+        return this.group;
+    }
+
+    public ResourceLocation getResource() {
+        return this.resource;
+    }
 }

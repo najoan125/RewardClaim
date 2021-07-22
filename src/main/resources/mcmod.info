@@ -1,15 +1,16 @@
 [
   {
-    "name": "§6§lRewardClaim§r",
+    "name": "\u00A76\u00A7lRewardClaim\u00A7r",
     "modid": "rewardclaim",
-    "description": "Claim your Hypixel daily rewards §owithout opening a browser!§r",
+    "description": "Claim your Hypixel daily rewards \u00A7owithout opening a browser!\u00A7r",
     "version": "${version}",
     "mcversion": "1.8.9",
     "url": "https://github.com/Dance-Dog/RewardClaim",
     "authorList": [
-      "Dance_Dog"
+      "Dance_Dog",
+      "Befell"
     ],
     "logoFile": "assets/rewardclaim/textures/banner.png",
-    "credits": "§lAll credit goes to Hypixel Inc. (§r https://hypixel.net §l) for the §loriginal §lDaily §lReward §lassets §lused §lby §lthis §lmod§r"
+    "credits": "\u00A7lAll credit goes to Hypixel Inc. (\u00A7r https://hypixel.net \u00A7l) for the \u00A7loriginal \u00A7lDaily \u00A7lReward \u00A7lassets \u00A7lused \u00A7lby \u00A7lthis \u00A7lmod\u00A7r"
   }
 ]
