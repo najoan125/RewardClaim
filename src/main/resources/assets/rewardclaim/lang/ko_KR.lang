@@ -1,0 +1,90 @@
+# Chat & UI Text
+message.gui.title.initial=카드 회전을 시작하려면 아래 버튼을 클릭하십시오!
+message.gui.title.choosing=3가지 보상 중 하나를 청구하려면 클릭하십시오!
+message.gui.title.final=좋은 선택이에요! 내일 또 오세요!
+
+# Card Types
+
+rarity.common=평범(Common)
+rarity.rare=드뭄(Rare)
+rarity.epic=희귀(Epic)
+rarity.legendary=전설(Legendary)
+
+# =============================
+
+# Game Coins
+type.coins=%s 코인
+type.coins.description=%s 을(를) 위한 인게임 코인
+
+# Mystery Dust
+type.dust=Mystery Dust
+type.dust.description=치장품 제조에 사용
+
+# Network Experience
+type.experience=Hypixel 경험치
+type.experience.description=Hypixel Level을 높으는 데 사용됨
+
+# Normal Mystery Boxes
+type.mystery_box=Mystery Box
+type.mystery_box.description=열어서 치장품의 잠금을 해제하세요!
+
+# Skywars Souls
+type.souls=SkyWars Souls
+type.souls.description=SkyWars Soul을 잘 사용하세요
+
+# Giftable Mystery Boxes
+type.gift_box=Gift Box
+type.gift_box.description=Mystery Box를 당신의 친구들에게 보내세요!
+
+# Daily Reward Token
+type.adsense_token=보상 토큰
+type.adsense_token.description=각 토큰은 보상 카드를 한번 더 쓸 수 있습니다
+
+# SkyWars/Classic Tokens
+type.tokens=%s 토큰
+type.tokens.description=%s 을(를) 위한 인게임 토큰
+
+# Lobby Cosmetics
+
+type.add_vanity=로비 치장품
+
+vanity.suits.description=4가지 독특한 치장품 슈트 부품 중 1개
+vanity.emotes.description=고유한 애니메이션 Emote 항목
+vanity.gestures.description=고유한 애니메이션 제스처 항목
+vanity.unknown.description=알 수 없는 로비 치장품
+
+vanity.suit_treasure=Treasure Hunter Suit
+vanity.emote_moustache=Moustache Emote
+vanity.taunt_treasure=Dig for Treasure Gesture
+vanity.unknown=알 수 없는 치장품
+
+vanity.armor.helmet=헬멧
+vanity.armor.chestplate=흉갑
+vanity.armor.leggings=각반
+vanity.armor.boots=부츠
+
+# Housing Skulls
+# Skulls are in 3 groups of 6, each with a color chest icon (red/green/blue)
+
+type.housing_package=Housing Block
+type.housing_package.description=6개의 고유한 Housing 블록 중 1개
+
+housing.skull.red_treasure_chest=빨간 보물 상자
+housing.skull.blue_treasure_chest=파란 보물 상자
+housing.skull.green_treasure_chest=녹색 보물 상자
+housing.skull.gold_nugget=Gold Nugget
+housing.skull.pot_o_gold=Pot O' Gold
+housing.skull.rubiks_cube=Rubik's Cube
+housing.skull.piggy_bank=Piggy Bank
+housing.skull.health_potion=Health Potion
+housing.skull.coin_bag=Coin Bag
+housing.skull.ornamental_helmet=Ornamental Helmet
+housing.skull.pocket_galaxy=Pocket Galaxy
+housing.skull.mystic_pearl=Mystic Pearl
+housing.skull.agility_potion=Agility Potion
+housing.skull.golden_chalice=Golden Chalice
+housing.skull.jewelery_box=Jewelery Box
+housing.skull.crown=Crown
+housing.skull.molten_core=Molten Core
+housing.skull.mana_potion=Mana Potion
+housing.skull.unknown=Unknown Block
